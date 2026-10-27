@@ -40,5 +40,8 @@ yarn-error.*
 /ios
 /android
 
-# promo / marketing assets (local only)
-promo/
+# promo: keep heavy media out of git (host the mp4 on a GitHub Release / YouTube
+# and link it). The lightweight script + poster can be committed as documentation.
+promo/*.mp4
+promo/*.wav
+promo/*.mov

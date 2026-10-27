@@ -2,7 +2,9 @@
 // Every call resolves to data or throws a typed error: { kind, message }.
 
 const BASE = 'https://api.mfapi.in';
-const DEFAULT_TIMEOUT = 12000;
+// Full NAV-history responses can be large (100 KB+) and MFAPI is sometimes
+// slow, so give requests generous headroom before aborting.
+const DEFAULT_TIMEOUT = 25000;
 
 // Small in-memory caches so re-opening a fund or repeating a search is instant.
 const detailCache = new Map();
