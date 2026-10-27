@@ -37,6 +37,11 @@ export default function NavChart({ points = [], direction = 'up', width, height 
   const minV = Math.min(...values);
   const maxV = Math.max(...values);
   const pad = (maxV - minV) * 0.12 || 1;
+  // gifted-charts subtracts `yAxisOffset` from every value, then scales by
+  // `maxValue`. So `maxValue` must be the OFFSET-RELATIVE range, not the
+  // absolute max — otherwise low-NAV funds compress to a flat line at the
+  // bottom of the chart.
+  const yOffset = Math.max(0, minV - pad);
 
   const chartWidth = (width ?? 320) - 8;
 
@@ -64,8 +69,8 @@ export default function NavChart({ points = [], direction = 'up', width, height 
         hideYAxisText
         yAxisThickness={0}
         xAxisThickness={0}
-        yAxisOffset={Math.max(0, minV - pad)}
-        maxValue={maxV + pad}
+        yAxisOffset={yOffset}
+        maxValue={maxV + pad - yOffset}
         disableScroll
         pointerConfig={{
           pointerStripHeight: height - 20,
