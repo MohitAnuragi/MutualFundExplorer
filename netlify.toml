@@ -1,0 +1,10 @@
+# Netlify deploy config for the Expo web export.
+[build]
+  command = "npx expo export --platform web"
+  publish = "dist"
+
+# SPA fallback: the app uses in-memory navigation, so route everything to index.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
