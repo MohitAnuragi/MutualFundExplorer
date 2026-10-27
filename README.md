@@ -15,7 +15,7 @@ A cross-platform app built with React Native (Expo), running on **iOS, Android, 
 </p>
 
 <!-- After deploying (see Deployment below), replace the # with your live URL -->
-[**Live Demo**](#) · [**▶ Watch the promo**](https://youtube.com/shorts/qwBMu1uvB5Q) · [**Report an issue**](https://github.com/MohitAnuragi/MutualFundExplorer/issues)
+[**Live Demo**](https://mutual-fund-explorer-three.vercel.app/) · [**▶ Watch the promo**](https://youtube.com/shorts/qwBMu1uvB5Q) · [**Report an issue**](https://github.com/MohitAnuragi/MutualFundExplorer/issues)
 
 </div>
 
@@ -48,14 +48,14 @@ Data is sourced in real time from the free, public [**MFAPI.in**](https://www.mf
   <em>Search → fund detail with live NAV chart → watchlist → dark mode (captured on a physical Android device).</em>
 </div>
 
-### ▶️ Promo video
+###  Promo video
 
 <div align="center">
   <a href="https://youtube.com/shorts/qwBMu1uvB5Q">
     <img src="promo/poster.jpg" alt="Watch the Mutual Fund Explorer promo video" width="300">
   </a>
   <br>
-  <em>▶ A 50-second walkthrough — <a href="https://youtube.com/shorts/qwBMu1uvB5Q">watch on YouTube</a>.</em>
+  <em> A 50-second walkthrough — <a href="https://youtube.com/shorts/qwBMu1uvB5Q">watch on YouTube</a>.</em>
 </div>
 
 ## Tech Stack
