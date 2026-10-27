@@ -105,7 +105,7 @@ The app also runs in the browser via `react-native-web` and exports to a static 
 npx expo export --platform web   # outputs the static site to dist/
 ```
 
-Host the `dist/` folder on **Vercel** or **Netlify** (both free) — config files for each (`vercel.json`, `netlify.toml`) are already included, so importing the GitHub repo and clicking **Deploy** is all it takes. See [`DEPLOY.md`](DEPLOY.md) for step-by-step instructions.
+Host the `dist/` folder on **[Vercel](https://vercel.com)** (free) — a `vercel.json` config is already included, so importing the GitHub repo and clicking **Deploy** is all it takes. Every push to `main` then redeploys automatically.
 
 ## API Reference — [MFAPI.in](https://www.mfapi.in/)
 
@@ -147,7 +147,7 @@ MutualFundExplorer/
 ├── App.js                      # Entry: providers + navigation + fonts
 ├── app.json                    # Expo configuration
 ├── babel.config.js             # babel-preset-expo (Reanimated/Worklets)
-├── vercel.json / netlify.toml  # Web deploy configs
+├── vercel.json                 # Web deploy config
 └── src/
     ├── api/mfApi.js            # MFAPI client: timeouts, typed errors, cache
     ├── components/             # Reusable UI kit (Card, Chip, NavChart, StarButton, …)
